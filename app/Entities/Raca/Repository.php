@@ -15,4 +15,19 @@ class Repository
     {
         return $this->raca->orderBy('name', 'ASC')->get();
     }
+
+    public function store($values)
+    {
+        return $this->raca->create($values);
+    }
+
+    public function update($id, $values)
+    {
+        return $this->raca->find($id)->update($values);
+    }
+    
+    public function delete($id)
+    {
+        return $this->raca->find($id)->delete();
+    }
 }

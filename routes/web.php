@@ -27,5 +27,7 @@ Route::middleware('auth')->group(function () {
     Route::prefix('racas')->group(function () {
         Route::get('', 'Raca\RacaController@index')->name('raca.index');
         Route::post('store', 'Raca\RacaController@store')->name('raca.store');
+        Route::put('update/{id}', 'Raca\RacaController@update')->name('raca.update');
+        Route::get('delete/{id}', 'Raca\RacaController@delete')->name('raca.delete');
     });
 });
