@@ -1,7 +1,7 @@
 <?php
 
 return [
-
+  
   /*
   |--------------------------------------------------------------------------
   | Default Filesystem Disk
@@ -12,9 +12,9 @@ return [
   | based disks are available to your application. Just store away!
   |
   */
-
+  
   'default' => env('FILESYSTEM_DRIVER', 'local'),
-
+  
   /*
   |--------------------------------------------------------------------------
   | Default Cloud Filesystem Disk
@@ -25,9 +25,9 @@ return [
   | will be bound as the Cloud disk implementation in the container.
   |
   */
-
+  
   'cloud' => env('FILESYSTEM_CLOUD', 's3'),
-
+  
   /*
   |--------------------------------------------------------------------------
   | Filesystem Disks
@@ -40,49 +40,34 @@ return [
   | Supported Drivers: "local", "ftp", "s3", "rackspace"
   |
   */
-
+  
   'disks' => [
-
+    
     'local' => [
       'driver' => 'local',
-      'root' => storage_path('app'),
+      'root'   => storage_path('app'),
     ],
-
-    'local_upload_about' => [
+    
+    'local_upload_dogs' => [
       'driver' => 'local',
-      'root' => public_path() . '/uploads/about'
+      'root'   => public_path() . '/uploads/dogs'
     ],
-
-    'local_upload_why' => [
-      'driver' => 'local',
-      'root' => public_path() . '/uploads/why'
-    ],
-
-    'local_upload_service' => [
-      'driver' => 'local',
-      'root' => public_path() . '/uploads/service'
-    ],
-
-    'local_upload_special' => [
-      'driver' => 'local',
-      'root' => public_path() . '/uploads/special'
-    ],
-
+    
     'public' => [
-      'driver' => 'local',
-      'root' => storage_path('app/public'),
-      'url' => env('APP_URL') . '/storage',
+      'driver'     => 'local',
+      'root'       => storage_path('app/public'),
+      'url'        => env('APP_URL') . '/storage',
       'visibility' => 'public',
     ],
-
+    
     's3' => [
       'driver' => 's3',
-      'key' => env('AWS_ACCESS_KEY_ID'),
+      'key'    => env('AWS_ACCESS_KEY_ID'),
       'secret' => env('AWS_SECRET_ACCESS_KEY'),
       'region' => env('AWS_DEFAULT_REGION'),
       'bucket' => env('AWS_BUCKET'),
     ],
-
+  
   ],
 
 ];

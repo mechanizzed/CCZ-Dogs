@@ -1,7 +1,7 @@
 <?php
 
 return [
-
+  
   /*
   |--------------------------------------------------------------------------
   | Title
@@ -12,13 +12,13 @@ return [
   | You can optionally also specify a title prefix and/or postfix.
   |
   */
-
+  
   'title' => 'CCZ',
-
+  
   'title_prefix' => 'CCZ',
-
+  
   'title_postfix' => '',
-
+  
   /*
   |--------------------------------------------------------------------------
   | Logo
@@ -29,11 +29,11 @@ return [
   | variant, used for the mini side bar. Make it 3 letters or so
   |
   */
-
+  
   'logo' => '<b>CCZ</b>',
-
+  
   'logo_mini' => '<b>CCZ</b>',
-
+  
   /*
   |--------------------------------------------------------------------------
   | Skin Color
@@ -44,9 +44,9 @@ return [
   | ligth variant: blue-light, purple-light, purple-light, etc.
   |
   */
-
-  'skin' => 'blue',
-
+  
+  'skin' => 'blue-light',
+  
   /*
   |--------------------------------------------------------------------------
   | Layout
@@ -57,9 +57,9 @@ return [
   | removes the sidebar and places your menu in the top navbar
   |
   */
-
+  
   'layout' => null,
-
+  
   /*
   |--------------------------------------------------------------------------
   | Collapse Sidebar
@@ -70,9 +70,9 @@ return [
   | this is compatible with layouts except top-nav layout option
   |
   */
-
+  
   'collapse_sidebar' => false,
-
+  
   /*
   |--------------------------------------------------------------------------
   | URLs
@@ -84,17 +84,17 @@ return [
   | Set register_url to null if you don't want a register link.
   |
   */
-
+  
   'dashboard_url' => 'home',
-
+  
   'logout_url' => 'logout',
-
+  
   'logout_method' => null,
-
+  
   'login_url' => 'login',
-
+  
   'register_url' => 'register',
-
+  
   /*
   |--------------------------------------------------------------------------
   | Menu Items
@@ -106,19 +106,18 @@ return [
   | layout. The 'can' is a filter on Laravel's built in Gate functionality.
   |
   */
-
+  
   'menu' => [
     'DOGS',
     [
       'text'  => 'Listar registros',
-      'route' => 'home',
-      'icon'  => 'bars'
+      'route' => 'dogs.index',
+      'icon'  => 'dog'
     ],
-    'RAÇA',
     [
-      'text' => 'Listar raças',
+      'text'  => 'Listar raças',
       'route' => 'raca.index',
-      'icon' => 'bars'
+      'icon'  => 'dog'
     ],
     'USUÁRIO DO SISTEMA',
     [
@@ -132,7 +131,7 @@ return [
       'icon'  => 'lock',
     ],
   ],
-
+  
   /*
   |--------------------------------------------------------------------------
   | Menu Filters
@@ -144,7 +143,7 @@ return [
   | built in Gate functionality
   |
   */
-
+  
   'filters' => [
     JeroenNoten\LaravelAdminLte\Menu\Filters\HrefFilter::class,
     JeroenNoten\LaravelAdminLte\Menu\Filters\ActiveFilter::class,
@@ -152,7 +151,7 @@ return [
     JeroenNoten\LaravelAdminLte\Menu\Filters\ClassesFilter::class,
     JeroenNoten\LaravelAdminLte\Menu\Filters\GateFilter::class,
   ],
-
+  
   /*
   |--------------------------------------------------------------------------
   | Plugins Initialization
@@ -163,7 +162,7 @@ return [
   | to include the JavaScript file from a CDN via a script tag.
   |
   */
-
+  
   'plugins' => [
     'datatables' => true,
     'select2'    => true,
