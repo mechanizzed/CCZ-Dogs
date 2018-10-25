@@ -3,7 +3,7 @@
 @section('title', 'Categories')
 
 @section('content_header')
-<h1>SEO Settings
+<h1>Dashboard Settings
   <small> Home</small>
 </h1>
 @stop

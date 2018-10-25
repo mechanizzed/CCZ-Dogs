@@ -10,8 +10,8 @@
                 </button>
             </div>
             <div class="modal-body">
-                {!! Form::model($content, ['route' => ['special.update', $content->id] , 'method' => 'put']) !!}
-                @include('pages.special._form')
+                {!! Form::model($content, ['route' => ['dogs.update', $content->id] , 'method' => 'put']) !!}
+                @include('pages.dogs._form')
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

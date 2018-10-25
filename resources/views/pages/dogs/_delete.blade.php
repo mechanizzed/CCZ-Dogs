@@ -10,11 +10,11 @@
                 </button>
             </div>
             <div class="modal-body">
-                <strong>Page title: </strong> {{ $content->title }}
+                <strong>Cachorro: </strong> {{ $content->name }}
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <a href="{{ route('special.delete', $content->id) }}" class="btn btn-danger">YES, REMOVE PAGE</a>
+                <a href="{{ route('dogs.delete', $content->id) }}" class="btn btn-danger">YES, REMOVE PAGE</a>
             </div>
             {!! Form::close() !!}
         </div>

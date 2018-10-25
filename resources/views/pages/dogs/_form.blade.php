@@ -1,40 +1,51 @@
 <div class="row">
-    <div class="form-group col-lg-4">
-        {!! Form::label('category', 'Category') !!}
-        {!! Form::select('category_id', $categories, null, ['class' => 'form-control special_category']) !!}
-    </div>
-    <div class="form-group col-lg-8">
-        {!! Form::label('title', 'Title') !!}
-        {!! Form::text('title', null, ['class' => 'form-control', 'placeholder' => 'Page title', 'required']) !!}
-    </div>
+  <div class="form-group col-lg-4">
+    {!! Form::label('raca_id', 'Raça') !!}
+    {!! Form::select('raca_id', $racas, null, ['class' => 'form-control']) !!}
+  </div>
+  <div class="form-group col-lg-4">
+    {!! Form::label('name', 'Nome') !!}
+    {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nome do cachorrinho', 'required']) !!}
+  </div>
+
+  <div class="form-group col-lg-4">
+    {!! Form::label('entrada', 'Data da entrada') !!}
+    {!! Form::date('entrada', null, ['class' => 'form-control', 'placeholder' => 'Data da entrada']) !!}
+  </div>
+
+  <div class="form-group col-lg-4">
+    {!! Form::label('microchip', 'Microchip') !!}
+    {!! Form::text('microchip', null, ['class' => 'form-control', 'placeholder' => 'Microchip']) !!}
+  </div>
+
+  <div class="form-group col-lg-4">
+    {!! Form::label('color', 'Cor') !!}
+    {!! Form::text('color', null, ['class' => 'form-control', 'placeholder' => 'Cor']) !!}
+  </div>
+
+  <div class="form-group col-lg-4">
+    {!! Form::label('age', 'Idade') !!}
+    {!! Form::text('age', null, ['class' => 'form-control', 'placeholder' => 'Idade']) !!}
+  </div>
+
+  <div class="form-group col-lg-2">
+    {!! Form::label('castrado', 'É castrado?') !!}
+    {!! Form::select('castrado', [false => 'Não', true => 'Sim'], old('castrado'), ['class' => 'form-control']) !!}
+  </div>
+
+  <div class="form-group col-lg-5">
+    {!! Form::label('porte', 'Porte') !!}
+    {!! Form::text('porte', null, ['class' => 'form-control', 'placeholder' => 'Porte']) !!}
+  </div>
+
+  <div class="form-group col-lg-5">
+    {!! Form::label('temperamento', 'Temperamento') !!}
+    {!! Form::text('temperamento', null, ['class' => 'form-control', 'placeholder' => 'Temperamento']) !!}
+  </div>
 </div>
 
-<div class="form-group show_paypal" style="display: inline">
-    {!! Form::label('link', 'Link for PayPal') !!}
-    {!! Form::text('link', null, ['class' => 'form-control', 'placeholder' => 'PayPal link']) !!}
-</div>
 
-<div class="form-group">
-    {!! Form::label('body', 'Description') !!}
-    {!! Form::text('body', null, ['class' => 'editor']) !!}
-</div>
-
-<hr>
-<h5><i class="fa fa-google-plus-official" aria-hidden="true"></i> SEO settings</h5>
-<div class="jumbotron p-3">
-    <div class="row">
-        <div class="col-lg-6 form-group">
-            {!! Form::label('seo_title', 'SEO title for this page') !!}
-            {!! Form::text('seo_title', null, ['class' => 'form-control', 'placeholder' => 'SEO title']) !!}
-        </div>
-        <div class="col-lg-6 form-group">
-            {!! Form::label('seo_title', 'SEO keywords') !!}
-            {!! Form::text('seo_keywords', null, ['class' => 'form-control', 'placeholder' => 'SEO keywords']) !!}
-        </div>
-    </div>
-    <div class="form-group">
-        {!! Form::label('seo_description', 'Description for this page') !!}
-        {!! Form::textarea('seo_description', null, ['class' => 'form-control', 'rows' => 3]) !!}
-    </div>
-
-</div>
+{{--<div class="form-group">--}}
+{{--{!! Form::label('body', 'Description') !!}--}}
+{{--{!! Form::text('body', null, ['class' => 'editor']) !!}--}}
+{{--</div>--}}

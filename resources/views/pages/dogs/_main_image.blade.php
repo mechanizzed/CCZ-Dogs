@@ -1,4 +1,5 @@
-<div class="modal fade" id="image_{{ $content->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="image_{{ $content->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -8,12 +9,12 @@
         </button>
       </div>
       <div class="modal-body">
-        {!! Form::open(['route' => ['special.update.image', $content->id], 'method' => 'put', 'files' => true]) !!}
+        {!! Form::open(['route' => ['dogs.update.image', $content->id], 'method' => 'put', 'files' => true]) !!}
         <div class="col-lg-12">
           {!! Form::label('image', 'Main image') !!} <br>
           {!! Form::file('file', ['id' => 'profile-img-edit', 'required']) !!}
           <div class="jumbotron">
-            <img src="" id="profile-img-tag-edit" width="100%" style="display: none;" />
+            <img src="" id="profile-img-tag-edit" width="100%" style="display: none;"/>
           </div>
         </div>
       </div>
