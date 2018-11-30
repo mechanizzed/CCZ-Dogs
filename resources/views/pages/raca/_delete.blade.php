@@ -12,7 +12,7 @@
         <strong>Raça: </strong> {{ $content->name }}
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
         <a href="{{ route('raca.delete', $content->id) }}" class="btn btn-danger">SIM, REMOVER ESTE CONTEÚDO</a>
       </div>
       {!! Form::close() !!}

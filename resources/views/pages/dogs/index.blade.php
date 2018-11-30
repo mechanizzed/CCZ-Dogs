@@ -20,8 +20,11 @@
       <table id="datatables" class="table table-striped">
         <thead class="thead-dark">
         <tr>
-          <th scope="col">Foto</th>
+          <th scope="col">Foto principal</th>
           <th scope="col">Nome</th>
+          <th scope="col">Fotos</th>
+          <th scope="col">Vacinas</th>
+          <th scope="col">Anotações</th>
           <th scope="col" class="text-center">Ações</th>
         </tr>
         </thead>
@@ -35,13 +38,22 @@
                 </div>
               @else
                 <div data-toggle="modal" data-target="#image_{{ $content->id }}" style="cursor: pointer;">
-                  <div class="img-thumbnail d-flex justify-content-center align-items-center" style="height: 70px;">
+                  <div class="img-thumbnail d-flex justify-content-center align-items-center" style="width: 140px;">
                     <i class="fas fa-dog fa-2x"></i>
                   </div>
                 </div>
               @endif
             </td>
             <td>{{ $content->name }}</td>
+            <td>
+              <a href="" class="btn btn-primary rounded-0">
+                <i class="fa fa-photo"></i> Gerenciar imagens
+              </a>
+            </td>
+            <td>
+              <a href="" class="btn btn-info rounded-0"><i class="fa fa-syringe"></i> Vacinas</a>
+            </td>
+            <td>Anotações</td>
             <td>
 
               <div class="d-flex justify-content-center">
