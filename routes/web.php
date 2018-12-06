@@ -40,4 +40,12 @@ Route::middleware('auth')->group(function () {
     Route::get('delete/{id}', 'Raca\RacaController@delete')->name('raca.delete');
   });
   
+  //Vacinas
+  Route::prefix('vacinas')->group(function () {
+    Route::get('{idDog}', 'Vaccines\VaccinesController@index')->name('vaccines.index');
+    Route::post('store', 'Vaccines\VaccinesController@store')->name('vaccines.store');
+    Route::put('update/{id}', 'Vaccines\VaccinesController@update')->name('vaccines.update');
+    Route::get('delete/{id}', 'Vaccines\VaccinesController@delete')->name('vaccines.delete');
+  });
+  
 });

@@ -47,11 +47,12 @@
             <td>{{ $content->name }}</td>
             <td>
               <a href="" class="btn btn-primary rounded-0">
-                <i class="fa fa-photo"></i> Gerenciar imagens
+                <i class="fa fa-photo"></i> Imagens
               </a>
             </td>
             <td>
-              <a href="" class="btn btn-info rounded-0"><i class="fa fa-syringe"></i> Vacinas</a>
+              <a href="{{ route('vaccines.index', $content->id) }}" class="btn btn-info rounded-0"><i
+                  class="fa fa-syringe"></i> Vacinas</a>
             </td>
             <td>Anotações</td>
             <td>

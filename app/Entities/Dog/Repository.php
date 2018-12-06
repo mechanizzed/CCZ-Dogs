@@ -17,7 +17,7 @@ class Repository
   
   public function all()
   {
-    return $this->dog->orderBy('id', 'DESC')->get();
+    return $this->dog->orderBy('treatment', 'DESC')->get();
   }
   
   public function find($id)

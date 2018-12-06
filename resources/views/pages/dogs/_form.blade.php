@@ -33,12 +33,17 @@
     {!! Form::select('castrado', [false => 'Não', true => 'Sim'], old('castrado'), ['class' => 'form-control']) !!}
   </div>
 
-  <div class="form-group col-lg-5">
+  <div class="form-group col-lg-2">
+    {!! Form::label('treatment', 'Em tratamento?') !!}
+    {!! Form::select('treatment', [false => 'Não', true => 'Sim'], old('treatment'), ['class' => 'form-control']) !!}
+  </div>
+
+  <div class="form-group col-lg-4">
     {!! Form::label('porte', 'Porte') !!}
     {!! Form::text('porte', null, ['class' => 'form-control', 'placeholder' => 'Porte']) !!}
   </div>
 
-  <div class="form-group col-lg-5">
+  <div class="form-group col-lg-4">
     {!! Form::label('temperamento', 'Temperamento') !!}
     {!! Form::text('temperamento', null, ['class' => 'form-control', 'placeholder' => 'Temperamento']) !!}
   </div>
