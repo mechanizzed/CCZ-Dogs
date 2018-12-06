@@ -11,7 +11,11 @@
 @section('content')
   <div class="box">
     <div class="box-header">
-      <button type="button" class="btn btn-success rounded-0" data-toggle="modal" data-target="#add">
+      <a class="btn btn-info btn-sm" href="{{ route('dogs.index') }}">
+        <i class="fa fa-undo-alt"></i> Voltar para registros
+      </a>
+      <br>
+      <button type="button" class="btn btn-success rounded-0 mt-3" data-toggle="modal" data-target="#add">
         <i class="fa fa-plus"></i> Adicionar nova vacina
       </button>
     </div>
