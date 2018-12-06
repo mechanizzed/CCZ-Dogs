@@ -56,6 +56,8 @@
               </a> <br>
               @if( count($content->vaccines) !== 0)
                 <small class="text-secondary">Cadastradas: {{ count($content->vaccines) }}</small>
+              @else
+                <small class="text-secondary">Nenhuma vacina cadastrada</small>
               @endif
             </td>
             <td>Anotações</td>
