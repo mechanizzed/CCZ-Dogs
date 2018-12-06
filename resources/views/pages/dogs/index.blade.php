@@ -22,6 +22,8 @@
         <tr>
           <th scope="col">Foto principal</th>
           <th scope="col">Nome</th>
+          <th scope="col">Canil</th>
+          <th scope="col">Baia</th>
           <th scope="col">Fotos</th>
           <th scope="col">Vacinas</th>
           <th scope="col">Anotações</th>
@@ -45,6 +47,8 @@
               @endif
             </td>
             <td>{{ $content->name }}</td>
+            <td>{{ $content->canil }}</td>
+            <td>{{ $content->baia }}</td>
             <td>
               <a href="" class="btn btn-primary rounded-0">
                 <i class="fa fa-photo"></i> Imagens
