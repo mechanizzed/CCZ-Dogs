@@ -51,8 +51,12 @@
               </a>
             </td>
             <td>
-              <a href="{{ route('vaccines.index', $content->id) }}" class="btn btn-info rounded-0"><i
-                  class="fa fa-syringe"></i> Vacinas</a>
+              <a href="{{ route('vaccines.index', $content->id) }}" class="btn btn-info rounded-0">
+                <i class="fa fa-syringe"></i> Vacinas
+              </a> <br>
+              @if( count($content->vaccines) !== 0)
+                <small class="text-secondary">Cadastradas: {{ count($content->vaccines) }}</small>
+              @endif
             </td>
             <td>Anotações</td>
             <td>
