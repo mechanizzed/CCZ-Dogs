@@ -28,6 +28,17 @@
     {!! Form::text('age', null, ['class' => 'form-control', 'placeholder' => 'Idade']) !!}
   </div>
 
+
+  <div class="form-group col-lg-6">
+    {!! Form::label('porte', 'Porte') !!}
+    {!! Form::text('porte', null, ['class' => 'form-control', 'placeholder' => 'Porte']) !!}
+  </div>
+
+  <div class="form-group col-lg-6">
+    {!! Form::label('temperamento', 'Temperamento') !!}
+    {!! Form::text('temperamento', null, ['class' => 'form-control', 'placeholder' => 'Temperamento']) !!}
+  </div>
+
   <div class="form-group col-lg-2">
     {!! Form::label('castrado', 'É castrado?') !!}
     {!! Form::select('castrado', [false => 'Não', true => 'Sim'], old('castrado'), ['class' => 'form-control']) !!}
@@ -38,15 +49,17 @@
     {!! Form::select('treatment', [false => 'Não', true => 'Sim'], old('treatment'), ['class' => 'form-control']) !!}
   </div>
 
-  <div class="form-group col-lg-4">
-    {!! Form::label('porte', 'Porte') !!}
-    {!! Form::text('porte', null, ['class' => 'form-control', 'placeholder' => 'Porte']) !!}
+  <div class="form-group col-lg-3">
+    {!! Form::label('baia', 'Número da baia') !!}
+    {!! Form::text('baia', null, ['class' => 'form-control', 'placeholder' => 'Número da baia']) !!}
   </div>
 
-  <div class="form-group col-lg-4">
-    {!! Form::label('temperamento', 'Temperamento') !!}
-    {!! Form::text('temperamento', null, ['class' => 'form-control', 'placeholder' => 'Temperamento']) !!}
+  <div class="form-group col-lg-5">
+    {!! Form::label('canil', 'Canil') !!}
+    {!! Form::text('canil', null, ['class' => 'form-control', 'placeholder' => 'Canil']) !!}
   </div>
+
+
 </div>
 
 
